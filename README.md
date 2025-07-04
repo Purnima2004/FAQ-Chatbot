@@ -80,13 +80,3 @@ MIT
 
 ---
 
-## 🙏 Credits
-- Robot vector art: [Your image source or credit]
-- UI inspiration: Modern AI landing pages
-
----
-
-## 💡 Tips
-- For best results, use clear, well-structured documents and URLs.
-- The app works offline if models are pre-downloaded.
-- You can customize the UI and prompts in `app.py`.
