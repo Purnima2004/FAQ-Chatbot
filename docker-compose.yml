@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  rag-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./faqs:/app/faqs
+      - ./vectorstore:/app/vectorstore
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Uncomment the following if you want to use GPU
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    restart: unless-stopped
